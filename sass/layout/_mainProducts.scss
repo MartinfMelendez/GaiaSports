@@ -1,0 +1,81 @@
+.contenedor-filtro {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 1.25rem;
+}
+
+.section-categorias {
+    display: flex;
+    justify-content: center;
+
+    .contenedor-categorias {
+        display: flex;
+        width: 95%;
+        padding: .625rem;
+        gap: 5px;
+    }
+
+    .categorias-filtrar {
+        width: 30%;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .categoria-filtrar-categoria div {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    li {
+        font-weight: bold;
+    }
+}
+
+.categoria-filtrar-talles {
+    display: flex;
+    flex-direction: column;
+
+    .talles-inputs div {
+        width: 60%;
+        display: flex;
+        gap: .625rem;
+    }
+}
+
+.filtro-precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .prueba-precios {
+        display: flex;
+        text-align: center;
+    }
+
+    input {
+        width: 70px;
+        height: 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+
+    button {
+        border-radius: 5px;
+        height: 20px;
+        font-size: 15px;
+    }
+}
+
+.productos-filtros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}

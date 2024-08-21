@@ -1,0 +1,141 @@
+.contenedor-pagDetalles {
+    display: flex;
+    gap: 3.125rem;
+    margin: 3%;
+
+    .container-imagenes {
+        justify-content: center;
+        gap: .625rem;
+
+        .separador-posescolores {
+            display: flex;
+            flex-direction: row;
+            gap: .625rem;
+
+            .container-poses {
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+                margin-top: 3.125rem;
+
+                img {
+                    height: 7.8125rem;
+                    width: 6.25rem;
+                    border-radius: 10px;
+                }
+            }
+
+            .container_producto img {
+                height: 28.125rem;
+                width: 23.125rem;
+                border-radius: 30px;
+            }
+        }
+
+        .container-colores {
+            display: flex;
+            justify-content: center;
+            margin: .3125rem 0 0 6.25rem;
+            gap: .625rem;
+
+            img {
+                height: 7.8125rem;
+                width: 6.875rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.container__detalles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    .detalle-titulo h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: .625rem;
+    }
+
+    label {
+        font-size: 20px;
+        text-align: justify;
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
+
+    .detalles-modopagos {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: .625rem;
+
+        margin-bottom: 10px ; p{
+            font-size: 20px;
+        }
+
+        img {
+
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+}
+
+.formulario-compra {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 1.125rem;
+    }
+
+    select {
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: .625rem;
+        height: 1.5625rem;
+        width: 9.375rem;
+    }
+
+    input {
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: .625rem;
+        height: 1.5625rem;
+        width: 9.375rem;
+        border: .0313rem solid black;
+    }
+
+    button {
+        width: 9.375rem;
+        height: 1.5625rem;
+        border-radius: .625rem;
+        border: .0313rem solid black;
+    }
+}
+
+.formulario-envio {
+    label {
+        font-size: 1.125rem;
+    }
+
+    input {
+        width: 9.375rem;
+        height: 1.5625rem;
+        border-radius: .625rem;
+        border: .0313rem solid black;
+    }
+
+    button {
+        width: 4.375rem;
+        border-radius: 5px;
+        font-size: 15px;
+        border: .0313rem solid black;
+    }
+
+}

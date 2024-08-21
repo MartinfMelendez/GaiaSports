@@ -1,0 +1,31 @@
+footer {
+    margin-top: 10px;
+    padding-top: 15px;
+    background: linear-gradient(to left, $colorNavbar1, $colorNavbar2);
+
+    .div-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-contenedor-redes {
+        text-align: center;
+    }
+
+    .-contactos ul {
+        display: flex;
+        padding-right: 29px;
+    }
+
+    .div-contenedor-redes ul {
+        display: flex;
+        padding-right: 27px;
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+}
