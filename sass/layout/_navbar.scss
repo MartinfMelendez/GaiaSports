@@ -1,3 +1,7 @@
 .navbar {
     background: linear-gradient(to right, $colorNavbar1, $colorNavbar2);
+
+    a {
+        font-size: 1.4375rem;
+    }
 }

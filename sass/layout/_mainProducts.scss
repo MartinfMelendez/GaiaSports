@@ -22,19 +22,25 @@
         padding: 5px;
     }
 
+
+    .categoria-filtrar-categoria-titulo h2 {
+        font-size: 55px;
+    }
+
+
     .categoria-filtrar-categoria div {
         display: flex;
         justify-content: center;
-    }
+        ul {
+            flex-direction: column;
+            width: 80%;
+            padding-left: 10px;
+        }
 
-    ul {
-        flex-direction: column;
-        width: 80%;
-        padding-left: 10px;
-    }
-
-    li {
-        font-weight: bold;
+        li {
+            font-size: 1.5625rem;
+            font-weight: bold;
+        }
     }
 }
 
@@ -42,34 +48,45 @@
     display: flex;
     flex-direction: column;
 
+    h3 {
+        font-size: 50px;
+    }
+
     .talles-inputs div {
         width: 60%;
         display: flex;
         gap: .625rem;
+
+        input {
+            width: 20px;
+            height: 20px;
+        }
+
+        label {
+            font-size: 20px;
+                    }
     }
 }
 
 .filtro-precios {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 
-    .prueba-precios {
-        display: flex;
-        text-align: center;
-    }
+    div {
+        display: block;
+        align-items: center;
+        gap: .125rem;
 
-    input {
-        width: 70px;
-        height: 20px;
-        margin: 0 5px;
-        border-radius: 5px;
-    }
+        input {
+            width: 70px;
+            height: 20px;
+        }
 
-    button {
-        border-radius: 5px;
-        height: 20px;
-        font-size: 15px;
+        button {
+            width: 70px;
+            height: 20px;
+        }
     }
 }
 
@@ -78,4 +95,9 @@
     justify-content: center;
     width: 100%;
     padding: 10px;
+}
+
+.card a img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
 }

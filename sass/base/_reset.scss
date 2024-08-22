@@ -11,8 +11,14 @@ ul {
     align-items: center;
 }
 
+
+
 ul li img {
     padding-right: .3125rem;
+}
+
+li:hover {
+    transform: scale(1.1);
 }
 
 a {
@@ -20,10 +26,16 @@ a {
     color: black;
 }
 
+
 input {
     border: .0313rem solid black;
 }
 
 button {
     border: .0313rem solid black;
+}
+
+
+span{
+    font-weight: bold;
 }

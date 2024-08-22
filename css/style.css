@@ -14,6 +14,9 @@ ul {
 ul li img {
   padding-right: .3125rem; }
 
+li:hover {
+  transform: scale(1.1); }
+
 a {
   text-decoration: none;
   color: black; }
@@ -24,9 +27,14 @@ input {
 button {
   border: .0313rem solid black; }
 
+span {
+  font-weight: bold; }
+
 /*Layout*/
 .navbar {
   background: linear-gradient(to right, #FFF7AD, #FFBAF0); }
+  .navbar a {
+    font-size: 1.4375rem; }
 
 body {
   font-family: "Noto Serif", serif;
@@ -74,46 +82,58 @@ footer {
     width: 30%;
     justify-content: center;
     padding: 5px; }
+  .section-categorias .categoria-filtrar-categoria-titulo h2 {
+    font-size: 55px; }
   .section-categorias .categoria-filtrar-categoria div {
     display: flex;
     justify-content: center; }
-  .section-categorias ul {
-    flex-direction: column;
-    width: 80%;
-    padding-left: 10px; }
-  .section-categorias li {
-    font-weight: bold; }
+    .section-categorias .categoria-filtrar-categoria div ul {
+      flex-direction: column;
+      width: 80%;
+      padding-left: 10px; }
+    .section-categorias .categoria-filtrar-categoria div li {
+      font-size: 1.5625rem;
+      font-weight: bold; }
 
 .categoria-filtrar-talles {
   display: flex;
   flex-direction: column; }
+  .categoria-filtrar-talles h3 {
+    font-size: 50px; }
   .categoria-filtrar-talles .talles-inputs div {
     width: 60%;
     display: flex;
     gap: .625rem; }
+    .categoria-filtrar-talles .talles-inputs div input {
+      width: 20px;
+      height: 20px; }
+    .categoria-filtrar-talles .talles-inputs div label {
+      font-size: 20px; }
 
 .filtro-precios {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .filtro-precios .prueba-precios {
-    display: flex;
-    text-align: center; }
-  .filtro-precios input {
-    width: 70px;
-    height: 20px;
-    margin: 0 5px;
-    border-radius: 5px; }
-  .filtro-precios button {
-    border-radius: 5px;
-    height: 20px;
-    font-size: 15px; }
+  text-align: center; }
+  .filtro-precios div {
+    display: block;
+    align-items: center;
+    gap: .125rem; }
+    .filtro-precios div input {
+      width: 70px;
+      height: 20px; }
+    .filtro-precios div button {
+      width: 70px;
+      height: 20px; }
 
 .productos-filtros {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 10px; }
+
+.card a img:hover {
+  transform: scale(1.1);
+  overflow: hidden; }
 
 .contenedor-pagDetalles {
   display: flex;
@@ -214,12 +234,59 @@ footer {
   font-size: 15px;
   border: .0313rem solid black; }
 
-.form {
+.formulario-envio p {
+  font-size: 15px; }
+
+.formulario-cuenta {
   display: flex;
   justify-content: center;
-  border: 1px solid  red;
-  margin: 10px;
-  padding: 5px; }
+  align-items: center;
+  padding: 5px;
+  margin: 10px 0 5px 0;
+  height: 432px; }
+  .formulario-cuenta .form-cuenta h1 {
+    font-size: 60px;
+    text-align: center; }
+  .formulario-cuenta .form-cuenta button {
+    width: 500px;
+    height: 35px;
+    border-radius: 8px; }
+  .formulario-cuenta .form-cuenta button:hover {
+    background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+    font-weight: bold; }
+  .formulario-cuenta .form-cuenta .cuenta-nueva {
+    text-align: end;
+    padding: 10px; }
+
+.section-newUser {
+  display: flex;
+  justify-content: center;
+  padding: 13px; }
+  .section-newUser div {
+    width: 80%;
+    display: flex;
+    justify-content: center; }
+    .section-newUser div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%; }
+      .section-newUser div div h1 {
+        text-align: center;
+        font-size: 70px; }
+      .section-newUser div div div label {
+        font-size: 25px; }
+      .section-newUser div div .button-cuenta {
+        display: flex;
+        align-items: center; }
+        .section-newUser div div .button-cuenta button {
+          align-items: center;
+          width: 300px;
+          height: 35px;
+          border-radius: 10px; }
+        .section-newUser div div .button-cuenta button:hover {
+          background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+          font-weight: bold; }
 
 /*Components*/
 /*Media Queries*/
