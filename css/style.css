@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+
+body {
+  font-family: "Noto Serif", serif;
+  background-color: #f7dbfd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
 span {
   font-weight: bold;
 }
@@ -53,14 +63,6 @@ span {
 
 .navbar-ul li a {
   font-size: 1.25rem
-}
-
-body {
-  font-family: "Noto Serif", serif;
-  background-color: #f7dbfd;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 footer {
@@ -128,7 +130,6 @@ font-weight: bold;
   height: 100vh;
   text-align: center;
 }
-
 
 .contenedor-filtros {
   margin-bottom: 1.25rem;
@@ -977,6 +978,7 @@ font-weight: bold;
     font-size: 1.0625rem;
   }
 }
+
 
 @media(max-width: 768px) {
   /*768px*/
