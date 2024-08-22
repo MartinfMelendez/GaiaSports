@@ -3,290 +3,1895 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
+
+span {
+  font-weight: bold;
+}
 
 ul {
   display: flex;
   gap: .625rem;
   list-style: none;
-  align-items: center; }
+  align-items: center;
+}
 
 ul li img {
-  padding-right: .3125rem; }
+  padding-right: .3125rem;
+}
 
 li:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+}
 
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+}
 
 input {
-  border: .0313rem solid black; }
+  border: .0313rem solid black;
+}
 
 button {
-  border: .0313rem solid black; }
+  border: .0313rem solid black;
+}
 
 span {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /*Layout*/
 .navbar {
-  background: linear-gradient(to right, #FFF7AD, #FFBAF0); }
-  .navbar a {
-    font-size: 1.4375rem; }
+  background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+}
+
+.navbar-brand {
+  font-size: 1.875rem;
+}
+
+.navbar-ul li a {
+  font-size: 1.25rem
+}
 
 body {
   font-family: "Noto Serif", serif;
   background-color: #f7dbfd;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 footer {
-  margin-top: 10px;
-  padding-top: 15px;
-  background: linear-gradient(to left, #FFF7AD, #FFBAF0); }
-  footer .div-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  footer .div-contenedor-redes {
-    text-align: center; }
-  footer .-contactos ul {
-    display: flex;
-    padding-right: 29px; }
-  footer .div-contenedor-redes ul {
-    display: flex;
-    padding-right: 27px; }
-  footer .copyright {
-    width: 100%;
-    text-align: center;
-    position: relative; }
+  margin-top: .625rem;
+  padding-top: .9375rem;
+  background: linear-gradient(to left, #FFF7AD, #FFBAF0);
+}
+
+footer .div-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .div-contenedor-redes {
+  text-align: center;
+}
+
+footer .-contactos ul {
+  display: flex;
+  padding-right: 1.8125rem;
+}
+
+footer .div-contenedor-redes ul {
+  display: flex;
+  padding-right: 1.6875rem;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
 
 .contenedor-filtro {
   display: flex;
   justify-content: end;
   align-items: center;
-  margin: 1.25rem; }
+  margin: 1.25rem;
+}
+
+.card {
+  width: 17rem;
+}
+
+.card-body h5{
+font-weight: bold;
+}
 
 .section-categorias {
   display: flex;
-  justify-content: center; }
-  .section-categorias .contenedor-categorias {
-    display: flex;
-    width: 95%;
-    padding: .625rem;
-    gap: 5px; }
-  .section-categorias .categorias-filtrar {
-    width: 30%;
-    justify-content: center;
-    padding: 5px; }
-  .section-categorias .categoria-filtrar-categoria-titulo h2 {
-    font-size: 55px; }
-  .section-categorias .categoria-filtrar-categoria div {
-    display: flex;
-    justify-content: center; }
-    .section-categorias .categoria-filtrar-categoria div ul {
-      flex-direction: column;
-      width: 80%;
-      padding-left: 10px; }
-    .section-categorias .categoria-filtrar-categoria div li {
-      font-size: 1.5625rem;
-      font-weight: bold; }
+  justify-content: center;
+}
 
-.categoria-filtrar-talles {
+.section-categorias .contenedor-categorias {
   display: flex;
-  flex-direction: column; }
-  .categoria-filtrar-talles h3 {
-    font-size: 50px; }
-  .categoria-filtrar-talles .talles-inputs div {
-    width: 60%;
-    display: flex;
-    gap: .625rem; }
-    .categoria-filtrar-talles .talles-inputs div input {
-      width: 20px;
-      height: 20px; }
-    .categoria-filtrar-talles .talles-inputs div label {
-      font-size: 20px; }
+  width: 95%;
+  padding: .625rem;
+  gap: .3125rem;
+}
+
+.filtros-lateral {
+  width: 15.625rem;
+  padding: 1.25rem;
+  height: 100vh;
+  text-align: center;
+}
+
+
+.contenedor-filtros {
+  margin-bottom: 1.25rem;
+}
+
+.contenedor-filtros h3 {
+  font-size: 2.5rem;
+  margin-bottom: .625rem;
+}
+
+.contenedor-filtros a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.contenedor-filtros a:hover {
+  text-decoration: underline;
+}
+
+.contenedor-filtros label {
+  display: block;
+  margin-bottom: .3125rem;
+  cursor: pointer;
+}
+
+.contenedor-filtros input[type="checkbox"] {
+  margin-right: .625rem;
+}
+
+.contenedor-filtros input[type="number"] {
+  width: 5rem;
+  padding: .3125rem;
+  margin: .3125rem 0;
+  border: .0625rem solid #ccc;
+  border-radius: .25rem;
+}
+
+.filtros-lateral button.apply-filters {
+  padding: .625rem 1.25rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  transition: background-color 0.3s;
+}
+
+.filtros-lateral button.apply-filters:hover {
+  background-color: #0056b3;
+}
 
 .filtro-precios {
   display: flex;
   flex-direction: column;
-  text-align: center; }
-  .filtro-precios div {
-    display: block;
-    align-items: center;
-    gap: .125rem; }
-    .filtro-precios div input {
-      width: 70px;
-      height: 20px; }
-    .filtro-precios div button {
-      width: 70px;
-      height: 20px; }
+  text-align: center;
+}
+
+.filtro-precios div {
+  display: block;
+  align-items: center;
+  gap: .125rem;
+}
+
+.filtro-precios div input {
+  width: 4.375rem;
+  height: 1.25rem;
+}
+
+.filtro-precios div button {
+  width: 4.375rem;
+  height: 1.25rem;
+}
 
 .productos-filtros {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 10px; }
+  padding: .625rem;
+}
 
 .card a img:hover {
   transform: scale(1.1);
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .contenedor-pagDetalles {
   display: flex;
   gap: 3.125rem;
-  margin: 3%; }
-  .contenedor-pagDetalles .container-imagenes {
-    justify-content: center;
-    gap: .625rem; }
-    .contenedor-pagDetalles .container-imagenes .separador-posescolores {
-      display: flex;
-      flex-direction: row;
-      gap: .625rem; }
-      .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses {
-        display: flex;
-        flex-direction: column;
-        gap: .625rem;
-        margin-top: 3.125rem; }
-        .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
-          height: 7.8125rem;
-          width: 6.25rem;
-          border-radius: 10px; }
-      .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
-        height: 28.125rem;
-        width: 23.125rem;
-        border-radius: 30px; }
-    .contenedor-pagDetalles .container-imagenes .container-colores {
-      display: flex;
-      justify-content: center;
-      margin: .3125rem 0 0 6.25rem;
-      gap: .625rem; }
-      .contenedor-pagDetalles .container-imagenes .container-colores img {
-        height: 7.8125rem;
-        width: 6.875rem;
-        border-radius: 10px; }
+  margin: 3%;
+}
+
+.contenedor-pagDetalles .container-imagenes {
+  justify-content: center;
+  gap: .625rem;
+}
+
+.contenedor-pagDetalles .container-imagenes .separador-posescolores {
+  display: flex;
+  flex-direction: row;
+  gap: .625rem;
+}
+
+.contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  margin-top: 3.125rem;
+}
+
+.contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+  height: 7.8125rem;
+  width: 6.25rem;
+  border-radius: .625rem;
+}
+
+.contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+  height: 28.125rem;
+  width: 23.125rem;
+  border-radius: 1.875rem;
+}
+
+.contenedor-pagDetalles .container-imagenes .container-colores {
+  display: flex;
+  justify-content: center;
+  margin: .3125rem 0 0 6.25rem;
+  gap: .625rem;
+}
+
+.contenedor-pagDetalles .container-imagenes .container-colores img {
+  height: 7.8125rem;
+  width: 6.875rem;
+  border-radius: .625rem;
+}
 
 .container__detalles {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px; }
-  .container__detalles .detalle-titulo h1 {
-    font-size: 55px; }
-  .container__detalles h2 {
-    font-size: 35px;
-    margin-bottom: .625rem; }
-  .container__detalles label {
-    font-size: 20px;
-    text-align: justify;
-    font-weight: 100;
-    margin-bottom: 25px; }
-  .container__detalles .detalles-modopagos {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-    gap: .625rem;
-    margin-bottom: 10px; }
-    .container__detalles .detalles-modopagos p {
-      font-size: 20px; }
-    .container__detalles .detalles-modopagos img {
-      height: 2.5rem;
-      width: 2.5rem; }
+  margin-bottom: .9375rem;
+}
+
+.container__detalles .detalle-titulo h1 {
+  font-size: 3.4375rem;
+}
+
+.container__detalles h2 {
+  font-size: 2.1875rem;
+  margin-bottom: .625rem;
+}
+
+.container__detalles label {
+  font-size: 1.25rem;
+  text-align: justify;
+  font-weight: 100;
+  margin-bottom: 1.5625rem;
+}
+
+.container__detalles .detalles-modopagos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: .625rem;
+  margin-bottom: .625rem;
+}
+
+.container__detalles .detalles-modopagos p {
+  font-size: 1.25rem;
+}
+
+.container__detalles .detalles-modopagos img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
 
 .formulario-compra {
   display: flex;
-  flex-direction: column; }
-  .formulario-compra label {
-    font-size: 1.125rem; }
-  .formulario-compra select {
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: .625rem;
-    height: 1.5625rem;
-    width: 9.375rem; }
-  .formulario-compra input {
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: .625rem;
-    height: 1.5625rem;
-    width: 9.375rem;
-    border: .0313rem solid black; }
-  .formulario-compra button {
-    width: 9.375rem;
-    height: 1.5625rem;
-    border-radius: .625rem;
-    border: .0313rem solid black; }
+  flex-direction: column;
+}
+
+.formulario-compra label {
+  font-size: 1.125rem;
+}
+
+.formulario-compra select {
+  text-align: center;
+  margin-bottom: .625rem;
+  border-radius: .625rem;
+  height: 1.5625rem;
+  width: 9.375rem;
+}
+
+.formulario-compra input {
+  text-align: center;
+  margin-bottom: .625rem;
+  border-radius: .625rem;
+  height: 1.5625rem;
+  width: 9.375rem;
+  border: .0313rem solid black;
+}
+
+.formulario-compra button {
+  width: 9.375rem;
+  height: 1.5625rem;
+  border-radius: .625rem;
+  border: .0313rem solid black;
+}
 
 .formulario-envio label {
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+}
 
 .formulario-envio input {
   width: 9.375rem;
   height: 1.5625rem;
   border-radius: .625rem;
-  border: .0313rem solid black; }
+  border: .0313rem solid black;
+}
 
 .formulario-envio button {
   width: 4.375rem;
-  border-radius: 5px;
-  font-size: 15px;
-  border: .0313rem solid black; }
+  border-radius: .3125rem;
+  font-size: .9375rem;
+  border: .0313rem solid black;
+}
 
 .formulario-envio p {
-  font-size: 15px; }
+  font-size: .9375rem;
+}
 
 .formulario-cuenta {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  margin: 10px 0 5px 0;
-  height: 432px; }
-  .formulario-cuenta .form-cuenta h1 {
-    font-size: 60px;
-    text-align: center; }
-  .formulario-cuenta .form-cuenta button {
-    width: 500px;
-    height: 35px;
-    border-radius: 8px; }
-  .formulario-cuenta .form-cuenta button:hover {
-    background: linear-gradient(to right, #FFF7AD, #FFBAF0);
-    font-weight: bold; }
-  .formulario-cuenta .form-cuenta .cuenta-nueva {
-    text-align: end;
-    padding: 10px; }
+  padding: .3125rem;
+  margin: .625rem 0 .3125rem 0;
+  height: 27rem;
+}
+
+.formulario-cuenta .form-cuenta h1 {
+  font-size: 3.75rem;
+  text-align: center;
+}
+
+.formulario-cuenta .form-cuenta button {
+  width: 31.25rem;
+  height: 2.1875rem;
+  border-radius: .5rem;
+}
+
+.formulario-cuenta .form-cuenta button:hover {
+  background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+  font-weight: bold;
+}
+
+.formulario-cuenta .form-cuenta .cuenta-nueva {
+  text-align: end;
+  padding: .625rem;
+}
 
 .section-newUser {
   display: flex;
   justify-content: center;
-  padding: 13px; }
+  padding: .8125rem;
+}
+
+.section-newUser div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-newUser div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.section-newUser div div h1 {
+  text-align: center;
+  font-size: 4.375rem;
+}
+
+.section-newUser div div div label {
+  font-size: 1.5625rem;
+}
+
+.section-newUser div div .button-cuenta {
+  display: flex;
+  align-items: center;
+}
+
+.section-newUser div div .button-cuenta button {
+  align-items: center;
+  width: 18.75rem;
+  height: 2.1875rem;
+  border-radius: .625rem;
+}
+
+.section-newUser div div .button-cuenta button:hover {
+  background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+  font-weight: bold;
+}
+
+/*Components*/
+
+/*Media Queries*/
+
+@media(max-width: 1440px) {
+  /*1440*/
+
+  /*BARRA DE NAVEGACION*/
+
+  .navbar-brand {
+    font-size: 3.25rem;
+  }
+
+  .navbar-ul li a {
+    font-size: 1.75rem;
+  }
+
+  .nav-buscar input {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 18rem;
+  }
+
+  .nav-buscar button {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 8rem;
+  }
+
+  /*INDEX*/
+  .carousel-img img {
+    margin-top: .625rem;
+    width: 59.375rem;
+    height: 28.125rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h5 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.375rem;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+  /*PRODUCTOS*/
+
+  .dropdown button {
+    height: 3.75rem;
+    width: 9.375rem;
+    font-size: 1.125rem;
+  }
+
+  .dropdown ul li {
+    font-size: 1.125rem;
+  }
+
+  .contenedor-filtros h3 {
+    font-size: 3.5rem;
+    margin-bottom: .625rem;
+  }
+
+  .contenedor-filtros a {
+    font-size: 1.875rem;
+  }
+
+  .contenedor-filtros label {
+    font-size: 1.875rem;
+  }
+
+  .contenedor-filtros label input {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  /*PAGINA DETALLES*/
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+    height: 37.5rem;
+    width: 35.625rem;
+    border-radius: 1.875rem;
+  }
+
+  i.contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+    height: 10.3125rem;
+    width: 9.375rem;
+    border-radius: .625rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores img {
+    height: 10.3125rem;
+    width: 9.375rem;
+    border-radius: .625rem;
+  }
+
+  .container__detalles label {
+    font-size: 1.5625rem;
+    font-weight: 100;
+    margin-bottom: 1.5625rem;
+  }
+
+  .container__detalles .detalles-modopagos {
+    gap: .625rem;
+    margin-bottom: .625rem;
+  }
+
+  .container__detalles .detalles-modopagos p {
+    font-size: 1.25rem;
+  }
+
+  .container__detalles .detalles-modopagos img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .formulario-compra label {
+    font-size: 1.5625rem;
+  }
+
+  .formulario-compra select {
+    text-align: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    height: 1.875rem;
+    font-size: 1.0625rem;
+    width: 9.375rem;
+  }
+
+  .formulario-compra input {
+    text-align: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    height: 1.875rem;
+    font-size: 1.0625rem;
+    width: 9.375rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-compra button {
+    width: 9.375rem;
+    height: 1.875rem;
+    border-radius: .625rem;
+    font-size: 1.0625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio label {
+    font-size: 1.5625rem;
+  }
+
+  .formulario-envio input {
+    width: 9.375rem;
+    height: 1.875rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio h3 {
+    font-size: 3.125rem;
+  }
+
+  .formulario-envio button {
+    width: 5.625rem;
+    height: 1.875rem;
+    font-size: 1.0625rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio p {
+    font-size: 1.5625rem;
+  }
+
+  /*PAGINA CUENTA*/
+
+  .formulario-cuenta .form-cuenta h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .formulario-cuenta .form-cuenta div label {
+    font-size: 1.25rem;
+  }
+
+  .formulario-cuenta .form-cuenta div input {
+    font-size: 1.25rem;
+    width: 31.25rem;
+    height: 2.8125rem;
+  }
+
+  .formulario-cuenta .form-cuenta button {
+    width: 31.25rem;
+    height: 2.8125rem;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+  }
+
+  /*PAGINA NUEVO USUARIO*/
+
+  .section-newUser {
+    display: flex;
+    justify-content: center;
+    padding: .8125rem;
+  }
+
   .section-newUser div {
     width: 80%;
     display: flex;
-    justify-content: center; }
-    .section-newUser div div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 90%; }
-      .section-newUser div div h1 {
-        text-align: center;
-        font-size: 70px; }
-      .section-newUser div div div label {
-        font-size: 25px; }
-      .section-newUser div div .button-cuenta {
-        display: flex;
-        align-items: center; }
-        .section-newUser div div .button-cuenta button {
-          align-items: center;
-          width: 300px;
-          height: 35px;
-          border-radius: 10px; }
-        .section-newUser div div .button-cuenta button:hover {
-          background: linear-gradient(to right, #FFF7AD, #FFBAF0);
-          font-weight: bold; }
+    justify-content: center;
+  }
 
-/*Components*/
-/*Media Queries*/
+  .section-newUser div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .section-newUser div div h1 {
+    text-align: center;
+    font-size: 4.375rem;
+  }
+
+  .section-newUser div div .form-control {
+    height: 2.8125rem;
+    font-size: 1.25rem;
+  }
+
+  .section-newUser div div div label {
+    font-size: 2.1875rem;
+  }
+
+
+  .section-newUser div div .button-cuenta button {
+    font-size: 1.5625rem;
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: .625rem;
+  }
+
+
+  /*FOOTER*/
+
+
+  footer h5 {
+    font-size: 2.25rem;
+  }
+
+  footer h2 {
+    font-size: 3rem;
+  }
+
+  .-contactos div ul li img {
+    height: 1.675rem;
+  }
+
+  .-contactos div ul li {
+
+    font-size: 1.5rem;
+  }
+
+  .div-footer-redes ul li img {
+    height: 1.675rem;
+  }
+
+  .div-footer-redes ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 1024px) {
+  /*1024px*/
+
+  /*BARRA DE NAVEGACION*/
+
+  .navbar-brand {
+    font-size: 2.8125rem;
+  }
+
+  .navbar-ul li a {
+    font-size: 1.375rem;
+  }
+
+  .nav-buscar input {
+    font-size: 1.125rem;
+    height: 2.5rem;
+    width: 15.625rem;
+  }
+
+  .nav-buscar button {
+    font-size: 1.25rem;
+    height: 2.375rem;
+    width: 7.375rem;
+  }
+
+  /*INDEX*/
+
+  .carousel-img img {
+    margin-top: 1.25rem;
+    width: 53.125rem;
+    height: 21.875rem;
+  }
+
+  h1 {
+    font-size: 4.375rem;
+  }
+
+  h5 {
+    font-size: 1.6875rem;
+  }
+
+  p {
+    font-size: 1.375rem;
+  }
+
+  .card {
+    width: 17.5rem;
+  }
+
+  /*PRODUCTOS*/
+
+  .dropdown button {
+    height: 3.75rem;
+    width: 9.375rem;
+    font-size: 1.125rem;
+  }
+
+  .dropdown ul li {
+    font-size: 1.125rem;
+  }
+
+  .contenedor-filtros h3 {
+    font-size: 3.5rem;
+    margin-bottom: .625rem;
+  }
+
+  .contenedor-filtros a {
+    font-size: 1.875rem;
+  }
+
+  .contenedor-filtros label {
+    font-size: 1.875rem;
+  }
+
+  .contenedor-filtros label input {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  /*PAGINA DETALLES*/
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+    height: 25rem;
+    width: 35.625rem;
+    border-radius: 1.875rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses{
+    margin-top: 2.5rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+    height: 6.25rem;
+    width: 6.875rem;
+    border-radius: .625rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores img {
+    height: 6.25rem;
+    width: 6.875rem;
+    border-radius: .625rem;
+  }
+
+  .container__detalles .detalle-titulo h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .container__detalles .detalle-titulo h2{
+    font-size: 1.875rem;
+  }
+
+  .container__detalles label {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-bottom: 1.5625rem;
+  }
+
+  .container__detalles .detalles-modopagos {
+    gap: .625rem;
+    margin-bottom: .625rem;
+  }
+
+  .container__detalles .detalles-modopagos img {
+    height: 2.0625rem;
+    width: 2.0625rem;
+  }
+
+  .formulario-compra label {
+    font-size: 1.375rem;
+  }
+
+  .formulario-compra select {
+    text-align: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    height: 1.5625rem;
+    font-size: .875rem;
+    width: 8.125rem;
+  }
+
+  .formulario-compra input {
+    text-align: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    height: 1.5625rem;
+    width: 8.125rem;
+    font-size: .875rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-compra button {
+    height: 1.5625rem;
+    font-size: .875rem;
+    width: 8.125rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio label {
+    font-size: 1.25rem;
+  }
+
+  .formulario-envio input {
+    height: 1.5625rem;
+    width: 8.125rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio h3 {
+    margin-top: .625rem;
+    font-size: 1.875rem;
+  }
+
+  .formulario-envio p {
+    font-size: 1.25rem
+;
+  }
+
+  .formulario-envio button {
+    height: 1.5625rem;
+    width: 8.125rem;
+    font-size: .875rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+
+  /*PAGINA CUENTA*/
+
+  .formulario-cuenta .form-cuenta h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .formulario-cuenta .form-cuenta div label {
+    font-size: 1.25rem;
+  }
+
+  .formulario-cuenta .form-cuenta div input {
+    font-size: 1.25rem;
+    width: 31.25rem;
+    height: 2.8125rem;
+  }
+
+  .formulario-cuenta .form-cuenta button {
+    width: 31.25rem;
+    height: 2.8125rem;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+  }
+
+  /*PAGINA NUEVO USUARIO*/
+
+  .section-newUser div div h1 {
+    text-align: center;
+    font-size: 4.375rem;
+  }
+
+  .section-newUser div div .form-control {
+    height: 2.8125rem;
+    font-size: 1.25rem;
+  }
+
+  .section-newUser div div div label {
+    font-size: 2rem;
+  }
+
+  .section-newUser div div .button-cuenta button {
+    font-size: 1.5625rem;
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: .625rem;
+  }
+
+  /*FOOTER*/
+
+  footer h5 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  footer h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+
+  .-contactos div ul li img {
+    height: 1.25rem;
+  }
+
+  .-contactos div ul li {
+    font-size: 1.25rem;
+  }
+
+  .div-footer-redes ul li img {
+    height: 1.25rem;
+  }
+
+  .div-footer-redes ul li a {
+    font-size: 1.25rem;
+  }
+
+  .copyright p{
+    font-size: 1.0625rem;
+  }
+}
+
+@media(max-width: 768px) {
+  /*768px*/
+
+  /*BARRA DE NAVEGACION*/
+
+  .frm-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor-filtro div .dropdown button {
+    height: 3.125rem;
+    width: 7.8125rem;
+    font-size: .9375rem;
+  }
+
+  .dropdown ul li {
+    font-size: .9375rem;
+  }
+
+
+  .nav-buscar input {
+    width: 21.875rem;
+    height: 2.25rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-buscar .btn-nav {
+    width: 6.25rem;
+    height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 20%;
+  }
+
+
+
+  /*INDEX*/
+
+  .carousel-img img {
+    margin-top: .625rem;
+    width: 34.375rem;
+    height: 15.625rem;
+  }
+
+  h1 {
+    font-size: 4.0625rem;
+  }
+
+  h5 {
+    font-size: 1.5625rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    width: 12.5rem;
+  }
+  .card-body h5 {
+    font-size: 1.375rem;
+  }
+
+  .card-body p {
+    font-size: 1.125rem;
+  }
+
+
+  /*PRODUCTOS*/
+
+  .dropdown button {
+    height: 3.75rem;
+    width: 9.375rem;
+    font-size: 1.125rem;
+  }
+
+  .dropdown ul li {
+    font-size: 1.125rem;
+  }
+
+  .contenedor-filtros h3 {
+    font-size: 2.6875rem;
+    margin-bottom: .625rem;
+  }
+
+  .contenedor-filtros a {
+    font-size: 1.25rem;
+  }
+
+  .contenedor-filtros label {
+    font-size: 1.25rem;
+  }
+
+  .contenedor-filtros label input {
+    height: .9375rem;
+    width: .9375rem;
+  }
+
+
+  /*PAGINA DETALLES*/
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+    height: 37.5rem;
+    width: 35.625rem;
+    border-radius: 1.875rem;
+  }
+
+  i.contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+    height: 10.3125rem;
+    width: 9.375rem;
+    border-radius: .625rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores img {
+    height: 10.3125rem;
+    width: 9.375rem;
+    border-radius: .625rem;
+  }
+
+  .container__detalles label {
+    font-size: 1.5625rem;
+    font-weight: 100;
+    margin-bottom: 1.5625rem;
+  }
+
+  .container__detalles .detalles-modopagos {
+    gap: .625rem;
+    margin-bottom: .625rem;
+  }
+
+  .container__detalles .detalles-modopagos p {
+    font-size: 1.25rem;
+  }
+
+  .container__detalles .detalles-modopagos img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .formulario-compra label {
+    font-size: 1.5625rem;
+  }
+
+  .formulario-compra select {
+    text-align: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    height: 1.875rem;
+    font-size: 1.0625rem;
+    width: 9.375rem;
+  }
+
+  .formulario-compra input {
+    text-align: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    height: 1.875rem;
+    font-size: 1.0625rem;
+    width: 9.375rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-compra button {
+    width: 9.375rem;
+    height: 1.875rem;
+    border-radius: .625rem;
+    font-size: 1.0625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio label {
+    font-size: 1.5625rem;
+  }
+
+  .formulario-envio input {
+    width: 9.375rem;
+    height: 1.875rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio h3 {
+    font-size: 3.125rem;
+  }
+
+  .formulario-envio button {
+    width: 5.625rem;
+    height: 1.875rem;
+    font-size: 1.0625rem;
+    border-radius: .625rem;
+    border: .0313rem solid black;
+  }
+
+  .formulario-envio p {
+    font-size: 1.5625rem;
+  }
+
+  /*PAGINA CUENTA*/
+
+  .formulario-cuenta .form-cuenta h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .formulario-cuenta .form-cuenta div label {
+    font-size: 1.25rem;
+  }
+
+  .formulario-cuenta .form-cuenta div input {
+    font-size: 1.25rem;
+    width: 31.25rem;
+    height: 2.8125rem;
+  }
+
+  .formulario-cuenta .form-cuenta button {
+    width: 31.25rem;
+    height: 2.8125rem;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+  }
+
+  /*PAGINA NUEVO USUARIO*/
+
+
+
+  .section-newUser div div h1 {
+    text-align: center;
+    font-size: 3.875rem;
+    margin: .9375rem 0 .9375rem 0;
+  }
+
+  .section-newUser div div .form-control {
+    height: 2.8125rem;
+    font-size: 1.25rem;
+  }
+
+  .section-newUser div div div label {
+    font-size: 1.75rem;
+  }
+
+  .section-newUser div div .button-cuenta button {
+    font-size: 1.5625rem;
+    width: 18.75rem;
+    height: 2.5rem;
+    border-radius: .625rem;
+  }
+
+
+  /*FOOTER*/
+
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer h5 {
+    font-size: 1.5625rem;
+  }
+
+  footer h2 {
+    font-size: 2.1875rem;
+  }
+
+  .-contactos div ul li img {
+    height: 1.25rem;
+  }
+
+  .-contactos div ul li {
+    font-size: 1.25rem;
+  }
+
+  .div-footer-redes ul li img {
+    height: 1.25rem;
+  }
+
+  .div-footer-redes ul li a {
+    font-size: 1.25rem;
+  }
+
+  .copyright {
+    font-size: 1.125rem;
+  }
+}
+
+@media(max-width: 425px) {
+  /* 425px*/
+
+
+  /*BARRA DE NAVEGACION*/
+
+  .navbar-brand {
+    font-size: 1.875rem;
+  }
+
+  .navbar-ul li a {
+    font-size: 1.125rem;
+  }
+
+  .nav-buscar input {
+    width: 15.625rem;
+    height: 1.375rem;
+    font-size: .75rem;
+
+  }
+
+  .nav-buscar .btn-nav {
+    width: 4.375rem;
+    height: 1.25rem;
+    font-size: .9375rem;
+    line-height: 20%;
+  }
+
+  /*INDEX*/
+  .carousel-img img {
+    margin-top: .625rem;
+    width: 17.5rem;
+    height: 7.1875rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.5625rem;
+  }
+
+  .card {
+    width: 9.375rem;
+  }
+
+  .card-body h5 {
+    font-size: 1.25rem;
+  }
+
+  .card-body p {
+    font-size: .9375rem;
+  }
+
+  /*PAGINA PRODUCTOS*/
+
+  .dropdown button {
+    height: 1.875rem;
+    width: 5.9375rem;
+    font-size: .75rem;
+  }
+
+  .dropdown ul li {
+    font-size: .75rem;
+  }
+
+  .contenedor-filtros h3 {
+    font-size: 1.5625rem;
+    margin-bottom: .625rem;
+  }
+
+  .contenedor-filtros a {
+    font-size: 1.25rem;
+  }
+
+  .contenedor-filtros label {
+    font-size: 1.25rem;
+  }
+
+  .contenedor-filtros input {
+    height: 1.5625rem;
+  }
+
+  .filtros-lateral button {
+    height: 1.875rem;
+    width: 6.25rem;
+    font-size: .5625rem;
+  }
+
+  /*PAGINA DETALLES*/
+
+  .main-detalles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses {
+    margin-top: .9375rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+    height: 4.375rem;
+    width: 4.375rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+    height: 18.75rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores img {
+    height: 4.375rem;
+    width: 4.375rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores {
+    margin: .9375rem 0 0 5rem;
+  }
+
+
+  .container__detalles .detalle-titulo h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .container__detalles .detalle-titulo h2 {
+    font-size: 1rem;
+  }
+
+  .container__detalles .detalle-titulo label {
+    font-size: .75rem;
+  }
+
+  .container__detalles .detalles-modopagos label {
+    font-size: .75rem;
+  }
+
+  .container__detalles .detalles-modopagos img {
+    height: 1.25rem;
+  }
+
+  .form-detalles .formulario-compra label {
+    font-size: .9375rem;
+  }
+
+  .form-detalles .formulario-compra select {
+    font-size: .9375rem;
+    width: 3.125rem;
+  }
+
+  .form-detalles .formulario-compra input {
+    width: 3.125rem;
+  }
+
+  .form-detalles .formulario-compra button {
+    width: 3.155rem;
+    height: 1.25rem;
+    font-size: .5625rem;
+  }
+
+  .formulario-envio h3 {
+    font-size: 1.25rem;
+  }
+
+  .formulario-envio h3 p {
+    font-size: .9375rem;
+  }
+
+  .formulario-envio label {
+    font-size: .9375rem;
+  }
+
+  .formulario-envio input {
+    width: 6.25rem;
+    height: 1.25rem;
+  }
+
+  .formulario-envio button {
+    width: 6.25rem;
+    height: 1.25rem;
+    font-size: .75rem;
+  }
+
+  /*PAGINA CUENTA*/
+
+  .formulario-cuenta .form-cuenta h1 {
+    font-size: 2.8125rem;
+    text-align: center;
+  }
+
+  .form-cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario-cuenta .form-cuenta div label {
+    font-size: 1.25rem;
+  }
+
+  .formulario-cuenta .form-cuenta div input {
+    font-size: .9375rem;
+    width: 12.5rem;
+    height: 1.875rem;
+  }
+
+  .formulario-cuenta .form-cuenta button {
+    width: 12.5rem;
+    height: 1.875rem;
+    ;
+    border-radius: .5rem;
+    font-size: .9375rem;
+  }
+
+  .cuenta-nueva p,
+  a {
+    font-size: .9375rem;
+  }
+
+
+  /*PAGINA NUEVO USUARIO*/
+
+  .section-newUser {
+    display: flex;
+    justify-content: center;
+    padding: .8125rem;
+  }
+
+  .section-newUser div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-newUser div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .section-newUser div div h1 {
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: bold;
+  }
+
+  .section-newUser div div .form-control {
+    width: 13.75rem;
+    height: 1.875rem;
+    font-size: .9375rem;
+  }
+
+  .section-newUser div div div label {
+    font-size: 1.0625rem;
+  }
+
+  .section-newUser div div .button-cuenta button {
+    width: 9.375rem;
+    height: 1.5625rem;
+    font-size: .9375rem;
+  }
+
+  /*FOOTER*/
+
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  footer h5 {
+    font-size: 1.25rem;
+  }
+
+
+  footer h2 {
+    font-size: 1.5625rem;
+    font-weight: bold;
+  }
+
+  .-contactos div ul li img {
+    height: .9375rem;
+  }
+
+  .-contactos div ul li {
+    font-size: .9375rem;
+  }
+
+  .div-footer-redes ul li img {
+    height: .9375rem;
+  }
+
+  .div-footer-redes ul li a {
+    font-size: .9375rem;
+  }
+
+  .copyright p {
+    font-size: .75rem;
+  }
+
+}
+
+@media(max-width: 375px) {
+  /* 375px*/
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+    height: 15.625rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores img {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+
+}
+
+@media(max-width: 320px) {
+  /*320*/
+
+  /*BARRA DE NAVEGACION*/
+
+  .navbar-brand {
+    font-size: 1.875rem;
+  }
+
+  .navbar-ul li a {
+    font-size: 1.125rem;
+  }
+
+
+  .nav-buscar input {
+    width: 12.5rem;
+    height: 1.125rem;
+    font-size: .75rem;
+  }
+
+  .nav-buscar .btn-nav {
+    width: 3.75rem;
+    height: 1.125rem;
+    font-size: smaller;
+    line-height: 20%;
+  }
+
+  /*INDEX*/
+  .carousel-img img {
+    margin-top: .625rem;
+    width: 13.75rem;
+    height: 7.1875rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.375rem;
+  }
+
+  .card {
+    width: 9.375rem;
+  }
+
+  .card-body h5 {
+    font-size: 1.25rem;
+  }
+
+  .card-body p {
+    font-size: .9375rem;
+  }
+
+  /*PAGINA PRODUCTOS*/
+
+  .dropdown button {
+    height: 1.875rem;
+    width: 5.9375rem;
+    font-size: .75rem;
+  }
+
+  .dropdown ul li {
+    font-size: .75rem;
+  }
+
+  .contenedor-filtros h3 {
+    font-size: 1.5625rem;
+    margin-bottom: .625rem;
+  }
+
+  .contenedor-filtros a {
+    font-size: 1.25rem;
+  }
+
+  .contenedor-filtros label {
+    font-size: 1.25rem;
+  }
+
+  .contenedor-filtros input {
+    height: 1.5625rem;
+  }
+
+  .filtros-lateral button {
+    height: 1.875rem;
+    width: 6.25rem;
+    font-size: .5625rem;
+  }
+
+  /*PAGINA DETALLES*/
+
+  .main-detalles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses {
+    margin-top: .9375rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container-poses img {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .separador-posescolores .container_producto img {
+    height: 12.5rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores {
+    margin: .9375rem 0 0 5rem;
+  }
+
+  .contenedor-pagDetalles .container-imagenes .container-colores img {
+    height: 3.125rem;
+    width: 3.125rem;
+    ;
+  }
+
+  .container__detalles .detalle-titulo h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .container__detalles .detalle-titulo h2 {
+    font-size: 1rem;
+  }
+
+  .container__detalles .detalle-titulo label {
+    font-size: .75rem;
+  }
+
+  .container__detalles .detalles-modopagos label {
+    font-size: .75rem;
+  }
+
+  .container__detalles .detalles-modopagos img {
+    height: 1.25rem;
+  }
+
+  .form-detalles .formulario-compra label {
+    font-size: .9375rem;
+  }
+
+  .form-detalles .formulario-compra select {
+    font-size: .9375rem;
+    width: 3.125rem;
+  }
+
+  .form-detalles .formulario-compra input {
+    width: 3.125rem;
+  }
+
+  .form-detalles .formulario-compra button {
+    width: 3.155rem;
+    height: 1.25rem;
+    font-size: .5625rem;
+  }
+
+  .formulario-envio h3 {
+    font-size: 1.25rem;
+  }
+
+  .formulario-envio h3 p {
+    font-size: .9375rem;
+  }
+
+  .formulario-envio label {
+    font-size: .9375rem;
+  }
+
+  .formulario-envio input {
+    width: 6.25rem;
+    height: 1.25rem;
+  }
+
+  .formulario-envio button {
+    width: 6.25rem;
+    height: 1.25rem;
+    font-size: .75rem;
+  }
+
+  /*PAGINA CUENTA*/
+
+  .formulario-cuenta .form-cuenta h1 {
+    font-size: 2.8125rem;
+    text-align: center;
+  }
+
+  .form-cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario-cuenta .form-cuenta div label {
+    font-size: 1.25rem;
+  }
+
+  .formulario-cuenta .form-cuenta div input {
+    font-size: .9375rem;
+    width: 12.5rem;
+    height: 1.875rem;
+  }
+
+  .formulario-cuenta .form-cuenta button {
+    width: 12.5rem;
+    height: 1.875rem;
+    ;
+    border-radius: .5rem;
+    font-size: .9375rem;
+  }
+
+  .cuenta-nueva p,
+  a {
+    font-size: .9375rem;
+  }
+
+
+  /*PAGINA NUEVO USUARIO*/
+
+  .section-newUser {
+    display: flex;
+    justify-content: center;
+    padding: .8125rem;
+  }
+
+  .section-newUser div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-newUser div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .section-newUser div div h1 {
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: bold;
+  }
+
+  .section-newUser div div .form-control {
+    width: 13.75rem;
+    height: 1.875rem;
+    font-size: .9375rem;
+  }
+
+  .section-newUser div div div label {
+    font-size: 1.0625rem;
+  }
+
+  .section-newUser div div .button-cuenta button {
+    width: 9.375rem;
+    height: 1.5625rem;
+    font-size: .9375rem;
+  }
+
+  /*FOOTER*/
+
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  footer h5 {
+    font-size: 1.25rem;
+  }
+
+
+  footer h2 {
+    font-size: 1.5625rem;
+    font-weight: bold;
+  }
+
+  .-contactos div ul li img {
+    height: .9375rem;
+  }
+
+  .-contactos div ul li {
+    font-size: .9375rem;
+  }
+
+  .div-footer-redes ul li img {
+    height: .9375rem;
+  }
+
+  .div-footer-redes ul li a {
+    font-size: .9375rem;
+  }
+
+  .copyright p {
+    font-size: .75rem;
+  }
+
+}
