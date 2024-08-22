@@ -21,14 +21,14 @@
                 img {
                     height: 7.8125rem;
                     width: 6.25rem;
-                    border-radius: 10px;
+                    border-radius: .625rem;
                 }
             }
 
             .container_producto img {
                 height: 28.125rem;
                 width: 23.125rem;
-                border-radius: 30px;
+                border-radius: 1.875rem;
             }
         }
 
@@ -41,7 +41,7 @@
             img {
                 height: 7.8125rem;
                 width: 6.875rem;
-                border-radius: 10px;
+                border-radius: .625rem;
             }
         }
     }
@@ -50,22 +50,22 @@
 .container__detalles {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: .9375rem;
 
     .detalle-titulo h1 {
-        font-size: 55px;
+        font-size: 3.4375rem;
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 2.1875rem;
         margin-bottom: .625rem;
     }
 
     label {
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align: justify;
         font-weight: 100;
-        margin-bottom: 25px;
+        margin-bottom: 1.5625rem;
     }
 
     .detalles-modopagos {
@@ -74,8 +74,8 @@
         justify-content: start;
         gap: .625rem;
 
-        margin-bottom: 10px ; p{
-            font-size: 20px;
+        margin-bottom: .625rem ; p{
+            font-size: 1.25rem;
         }
 
         img {
@@ -96,7 +96,7 @@
 
     select {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: .625rem;
         border-radius: .625rem;
         height: 1.5625rem;
         width: 9.375rem;
@@ -104,7 +104,7 @@
 
     input {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: .625rem;
         border-radius: .625rem;
         height: 1.5625rem;
         width: 9.375rem;
@@ -133,13 +133,13 @@
 
     button {
         width: 4.375rem;
-        border-radius: 5px;
-        font-size: 15px;
+        border-radius: .3125rem;
+        font-size: .9375rem;
         border: .0313rem solid black;
     }
 
     p{
-        font-size: 15px;
+        font-size: .9375rem;
     }
 
 }

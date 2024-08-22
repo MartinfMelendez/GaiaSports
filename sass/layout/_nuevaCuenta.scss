@@ -1,7 +1,7 @@
 .section-newUser {
     display: flex;
     justify-content: center;
-    padding: 13px;
+    padding: .8125rem;
 
     div {
         width: 80%;
@@ -16,12 +16,12 @@
 
             h1 {
                 text-align: center;
-                font-size: 70px;
+                font-size: 4.375rem;
             }
 
             div {
                 label {
-                    font-size: 25px;
+                    font-size: 1.5625rem;
                 }
 
             }
@@ -32,9 +32,9 @@
 
                 button {
                     align-items: center;
-                    width: 300px;
-                    height: 35px;
-                    border-radius: 10px;
+                    width: 18.75rem;
+                    height: 2.1875rem;
+                    border-radius: .625rem;
                 }
 
                 button:hover {
