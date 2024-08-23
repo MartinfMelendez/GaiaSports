@@ -759,6 +759,10 @@ font-weight: bold;
     width: 17.5rem;
   }
 
+  .card-body p{
+    display: none;
+  }
+
   /*PRODUCTOS*/
 
   .dropdown button {
@@ -1039,12 +1043,12 @@ font-weight: bold;
   .card {
     width: 12.5rem;
   }
+
+  .card-body p{
+    display: none;
+  }
   .card-body h5 {
     font-size: 1.375rem;
-  }
-
-  .card-body p {
-    font-size: 1.125rem;
   }
 
 
@@ -1327,8 +1331,8 @@ font-weight: bold;
     font-size: 1.25rem;
   }
 
-  .card-body p {
-    font-size: .9375rem;
+  .card-body p{
+    display: none;
   }
 
   /*PAGINA PRODUCTOS*/
@@ -1596,6 +1600,9 @@ font-weight: bold;
     height: 3.75rem;
     width: 3.75rem;
   }
+  .card-body p{
+    display: none;
+  }
 
 }
 
@@ -1653,8 +1660,8 @@ font-weight: bold;
     font-size: 1.25rem;
   }
 
-  .card-body p {
-    font-size: .9375rem;
+  .card-body p{
+    display: none;
   }
 
   /*PAGINA PRODUCTOS*/
